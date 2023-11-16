@@ -1,3 +1,3 @@
 export { default as ProProUserButton } from "./ProProUserButton";
-export { AuthProvider, useAuth } from "./AuthContext";
+export { AuthProvider, useAuth, withAuth } from "./AuthContext";
 export { default as proproAuth } from "./ProProAuth";

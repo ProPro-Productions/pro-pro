@@ -5,6 +5,7 @@ import React, {
   useEffect,
   ReactNode,
   useMemo,
+  ReactElement,
 } from "react";
 import { User } from "./interface/User.interface";
 
@@ -18,7 +19,21 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType>(null!);
 
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => {
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error("useAuth must be used within an AuthProvider");
+  }
+  return context;
+};
+
+export function withAuth<T>(Component: React.ComponentType<T>) {
+  return function WithAuth(props: T): ReactElement {
+    const authContext = useAuth();
+    // Pass the auth context as a prop to the wrapped component
+    return <Component {...props} proproAuth={authContext} />;
+  };
+}
 
 interface AuthProviderProps {
   children: ReactNode;
