@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAuth } from "./AuthContext";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
@@ -15,6 +15,12 @@ const ProProUserButton: React.FC<ProProUserButtonProps> = ({
   const handleSignOut = () => {
     signOut();
     window.location.href = afterSignOutUrl;
+  };
+
+  const [showAccountPopup, setShowAccountPopup] = useState(false);
+
+  const toggleAccountPopup = () => {
+    setShowAccountPopup(!showAccountPopup);
   };
 
   return (
@@ -42,14 +48,15 @@ const ProProUserButton: React.FC<ProProUserButtonProps> = ({
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/account"
+                <button
+                  type="button"
                   className={`${
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700"
                   } block px-4 py-2 text-sm`}
+                  onClick={toggleAccountPopup}
                 >
                   Manage account
-                </a>
+                </button>
               )}
             </Menu.Item>
             <Menu.Item>
