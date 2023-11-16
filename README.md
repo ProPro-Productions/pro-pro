@@ -57,9 +57,9 @@ export default Header;
 
 `proproAuth` is a set of hooks and utilities to manage authentication state and logic.
 
-#### `useProProAuth()`
+#### `useAuth()`
 
-`useProProAuth()` is a React hook that returns an object with the following properties:
+`useAuth()` is a React hook that returns an object with the following properties:
 
 | Name              | Type       | Description                               |
 | ----------------- | ---------- | ----------------------------------------- |
@@ -74,10 +74,10 @@ export default Header;
 
 ```jsx
 import React from "react";
-import { useProProAuth } from "propro-components";
+import { useAuth } from "propro-components";
 
 const Header = ({ afterSignOutUrl }) => {
-  const { user, isAuthenticated, isLoading, signIn, signOut } = useProProAuth();
+  const { user, isAuthenticated, isLoading, signIn, signOut } = useAuth();
 
   return (
     <header>
@@ -94,15 +94,15 @@ const Header = ({ afterSignOutUrl }) => {
 export default Header;
 ```
 
-#### `withProProAuth()`
+#### `withAuth()`
 
-`withProProAuth()` is a higher-order component that injects the `proproAuth` object into a component's props.
+`withAuth()` is a higher-order component that injects the `proproAuth` object into a component's props.
 
 #### Example
 
 ```jsx
 import React from "react";
-import { withProProAuth } from "propro-components";
+import { withAuth } from "propro-components";
 
 const Header = ({ afterSignOutUrl, proproAuth }) => {
   const { user, isAuthenticated, isLoading, signIn, signOut } = proproAuth;
