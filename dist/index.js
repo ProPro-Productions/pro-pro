@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AccountManagementPopup = exports.proproAuth = exports.withAuth = exports.useAuth = exports.AuthProvider = exports.ProProUserButton = void 0;
-require("./global.css");
 var ProProUserButton_1 = require("./ProProUserButton");
 Object.defineProperty(exports, "ProProUserButton", { enumerable: true, get: function () { return __importDefault(ProProUserButton_1).default; } });
 var AuthContext_1 = require("./AuthContext");
