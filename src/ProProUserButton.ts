@@ -8,7 +8,7 @@ const ProProUserButton: React.FC<ProProUserButtonProps> = ({
   afterSignOutUrl,
 }) => {
   const handleSignOut = () => {
-    // Implement your sign-out logic here
+    // TODO: Implement sign out
     window.location.href = afterSignOutUrl;
   };
 

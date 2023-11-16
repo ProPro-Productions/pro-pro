@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/ProPro-Productions/pro-pro.git",
   "author": "Chidozie C. Okafor <39489124+doziestar@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  }
 }
