@@ -39,9 +39,9 @@ npm install propro-components
 
 ```jsx
 import React from "react";
-import { ProProUserButton } from "propro";
+import { ProProUserButton } from "propro-components";
 
-import { ProProUserButton } from "propro";
+import { ProProUserButton } from "propro-components";
 
 const Header = ({ afterSignOutUrl }) => (
   <header>
@@ -74,7 +74,7 @@ export default Header;
 
 ```jsx
 import React from "react";
-import { useProProAuth } from "propro";
+import { useProProAuth } from "propro-components";
 
 const Header = ({ afterSignOutUrl }) => {
   const { user, isAuthenticated, isLoading, signIn, signOut } = useProProAuth();
@@ -102,7 +102,7 @@ export default Header;
 
 ```jsx
 import React from "react";
-import { withProProAuth } from "propro";
+import { withProProAuth } from "propro-components";
 
 const Header = ({ afterSignOutUrl, proproAuth }) => {
   const { user, isAuthenticated, isLoading, signIn, signOut } = proproAuth;
