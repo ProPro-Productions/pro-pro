@@ -1,12 +1,13 @@
 {
   "name": "propro-components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "repository": "https://github.com/ProPro-Productions/pro-pro.git",
   "author": "Chidozie C. Okafor <39489124+doziestar@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "react-scripts start"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.0",
@@ -29,6 +30,7 @@
     "mongodb": "^6.2.0",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
+    "react-scripts": "^5.0.1",
     "tailwindcss": "^3.3.5"
   }
 }
