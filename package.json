@@ -22,6 +22,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
+    "@shadcn/ui": "^0.0.4",
     "autoprefixer": "^10.4.16",
     "mongodb": "^6.2.0",
     "postcss": "^8.4.31",
