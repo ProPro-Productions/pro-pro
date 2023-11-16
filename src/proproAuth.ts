@@ -1,7 +1,6 @@
 import { User } from "./interface/User.interface";
 
 class AuthApi {
-  // Base URL for the API
   baseUrl = "/api/v1/auth";
 
   // Helper function to perform the API call
