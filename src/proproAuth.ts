@@ -1,3 +1,5 @@
+import { User } from "./interface/User.interface";
+
 class AuthApi {
   async signIn(email: string, password: string): Promise<User> {
     const response = await fetch("/api/v1/auth/signin", {
