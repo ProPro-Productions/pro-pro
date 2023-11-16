@@ -6,6 +6,7 @@ import React, {
   ReactNode,
   useMemo,
 } from "react";
+import { User } from "./interface/User.interface";
 
 interface AuthContextType {
   user: User | null;
