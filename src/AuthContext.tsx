@@ -1,4 +1,11 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+  useMemo,
+} from "react";
 
 interface User {
   id: string;
@@ -14,35 +21,41 @@ interface AuthContextType {
   signOut: () => void;
 }
 
-const AuthContext = createContext<AuthContextType>(null!); // Asserting that it won't be null
+const AuthContext = createContext<AuthContextType>(null!);
 
 export const useAuth = () => useContext(AuthContext);
 
-export const AuthProvider: React.FC = ({ children }) => {
+interface AuthProviderProps {
+  children: ReactNode;
+}
+
+export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    // token validation
+    // Token validation logic or initial load
+    // We can check local storage or make an API call to validate the current user's token
     setLoading(false);
   }, []);
 
   const signIn = async (email: string, password: string) => {
     setLoading(true);
-    // const loggedInUser = await authApi.signIn(email, password);
-    // setUser(loggedInUser);
+    // After successful sign-in, we need to update the user state
     setLoading(false);
   };
 
   const signOut = () => {
-    // await authApi.signOut();
+    // After successful sign-out, we need to clear the user state
     setUser(null);
   };
 
+  const authContextValue = useMemo(() => {
+    return { user, isAuthenticated: !!user, isLoading, signIn, signOut };
+  }, [user, isLoading, signIn, signOut]);
+
   return (
-    <AuthContext.Provider
-      value={{ user, isAuthenticated: !!user, isLoading, signIn, signOut }}
-    >
+    <AuthContext.Provider value={authContextValue}>
       {children}
     </AuthContext.Provider>
   );
