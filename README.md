@@ -9,14 +9,14 @@ ProPro is a suite of reusable React components and authentication hooks, designe
 
 ## Installation
 
-Install `propro` using yarn:
+Install `propro-components` using yarn:
 
 ```bash
-yarn add propro
+yarn add propro-components
 ```
 
 ```bash
-npm install propro
+npm install propro-components
 ```
 
 ## Usage
