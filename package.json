@@ -1,7 +1,7 @@
 {
   "name": "propro-components",
-  "version": "1.0.6",
-  "main": "index.js",
+  "version": "1.0.7",
+  "main": "src/index.js",
   "repository": "https://github.com/ProPro-Productions/pro-pro.git",
   "author": "Chidozie C. Okafor <39489124+doziestar@users.noreply.github.com>",
   "license": "MIT",
