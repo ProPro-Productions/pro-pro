@@ -1,0 +1,159 @@
+.root {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  justify-self: flex-start;
+}
+.markContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 1.6em;
+  height: 1.6em;
+  max-width: 100%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  flex-shrink: 0;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  padding: 0px;
+}
+.markContainerapp_mapMap {
+  margin-bottom: 2.5px;
+  padding: 2px;
+}
+.markContainerapp_proPro {
+  width: 1.7em;
+  height: 1.7em;
+  flex-shrink: 0;
+}
+.markContainersize_medium {
+  width: 2.24em;
+  height: 2.24em;
+  flex-shrink: 0;
+}
+.markContainersize_large {
+  width: 3.2em;
+  height: 3.2em;
+  flex-shrink: 0;
+}
+.root .markContainer:hover {
+  transform: scaleX(1.08) scaleY(1.08) scaleZ(1);
+}
+.img___5D5Ff {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+}
+.img___5D5Ff > picture > img {
+  object-fit: contain;
+}
+.appName {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding: 0px;
+}
+.appName > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 1px);
+  width: calc(100% + 1px);
+}
+.appName > :global(.__wab_flex-container) > *,
+.appName > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.appName > :global(.__wab_flex-container) > picture > img,
+.appName
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 1px;
+}
+.textContainerA {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 2em;
+  height: 2em;
+  max-width: 100%;
+  flex-shrink: 0;
+  padding: 0px;
+}
+.textContainerAsize_medium {
+  width: 2.8em;
+  height: 2.8em;
+  flex-shrink: 0;
+}
+.textContainerAsize_large {
+  width: 4em;
+  height: 4em;
+  flex-shrink: 0;
+}
+.img__tdstd {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+  transition-property: all;
+  transition-duration: 0.5s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.5s;
+}
+.img__tdstd > picture > img {
+  object-fit: contain;
+}
+.root .img__tdstd:hover {
+  transform: scaleX(1.08) scaleY(1.08) scaleZ(1);
+}
+.textContainerB {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 2em;
+  height: 2em;
+  max-width: 100%;
+  flex-shrink: 0;
+  padding: 0px;
+}
+.textContainerBapp_proPro {
+  height: 1.8em;
+  width: 1.8em;
+  flex-shrink: 0;
+}
+.textContainerBsize_medium {
+  width: 2.8em;
+  height: 2.8em;
+  flex-shrink: 0;
+}
+.textContainerBsize_large {
+  width: 4em;
+  height: 4em;
+  flex-shrink: 0;
+}
+.img__eKyrl {
+  position: relative;
+  object-fit: contain;
+  max-width: 100%;
+}
+.img__eKyrl > picture > img {
+  object-fit: contain;
+}
+.imgapp_proPro__eKyrlo8Eh {
+  margin-left: -1px;
+}
+.root .img__eKyrl:hover {
+  transform: scaleX(1.08) scaleY(1.08) scaleZ(1);
+}
