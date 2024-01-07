@@ -1,0 +1,173 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: flex-start;
+  background: none;
+  position: sticky;
+  min-width: 0;
+  padding: 0px;
+}
+.rootcolor_dark {
+  background: #232320;
+  border-color: #717069;
+}
+.rootcolor_white {
+  background: none;
+}
+.root:hover {
+  border-color: #c8c7c1;
+}
+.root:focus-within {
+  box-shadow: none;
+  outline: none;
+  border-radius: 6px;
+}
+.root___focusVisibleWithin {
+  box-shadow: 0px 0px 0px 3px #96c7f2;
+  outline: none;
+  border-radius: 6px;
+}
+.startIconContainer {
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  left: auto;
+  top: auto;
+  margin-right: 8px;
+  display: none;
+}
+.startIconContainershowStartIcon {
+  display: flex;
+}
+.root .startIconContainer___focusVisibleWithin {
+  outline: none;
+}
+.slotTargetStartIconshowStartIcon {
+  color: #90908c;
+}
+.slotTargetStartIconcolor_dark {
+  color: #ffffff;
+}
+.svg__axnIm {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+  max-width: 80%;
+  flex-shrink: 0;
+}
+.input {
+  width: 100%;
+  left: auto;
+  top: auto;
+  background: none;
+  color: var(--token-ZugA3JU5ecCi);
+  font-size: 1.3em;
+  min-width: 0;
+  padding: 0px;
+  border-width: 0px;
+}
+.inputisDisabled {
+  cursor: not-allowed;
+}
+.inputcolor_dark {
+  color: #ffffff;
+}
+.inputcolor_white {
+  background: #ffffff;
+}
+.inputcontext_sectionHeader {
+  font-size: 1.13em;
+  font-family: "Source Sans Pro", sans-serif;
+  white-space: pre;
+  font-weight: 600;
+  color: var(--token-leZ473BVNVNf);
+  font-style: italic;
+  line-height: 1.8em;
+  letter-spacing: 0px;
+}
+.inputcontext_hubSelection {
+  text-align: center;
+  font-weight: 600;
+  color: var(--token-KjKMBdm000QG);
+}
+.inputcontext_hubCreationModal {
+  font-size: 12px;
+  box-shadow: 0px 0px 2px 0px #ffffff33, inset 0px 2.5px 2.5px 0px #00000033;
+  background: #231f20;
+  border-radius: 6px;
+  padding: 6px 10px;
+  border-style: solid;
+  border-color: #231f20cc;
+}
+.inputcontext_searchBar {
+  font-size: 14px;
+  padding: 2px;
+}
+.inputcontext_signInSignUpForm {
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #575757;
+  opacity: 0.8;
+}
+.inputtextAlignment_center {
+  text-align: center;
+}
+.root:focus-within .input {
+  color: var(--token-v6F1z1DYnr3y);
+  outline: none;
+}
+.root .input___focusVisibleWithin {
+  color: var(--token-vScsy3mKu6O4);
+  outline: none;
+}
+.root .input:focus {
+  outline: none;
+}
+.rootcontext_signInSignUpForm .inputcontext_signInSignUpForm:focus {
+  outline: none;
+}
+.root:focus-within .input:focus {
+  outline: none;
+}
+.root .input::placeholder {
+  color: #706f6c;
+}
+.rootcolor_dark .inputcolor_dark::placeholder {
+  color: #c8c7c1;
+}
+.root:focus-within .input::placeholder {
+  outline: none;
+}
+.endIconContainer {
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  left: auto;
+  top: auto;
+  margin-left: 8px;
+  display: none;
+}
+.endIconContainershowEndIcon {
+  display: flex;
+}
+.slotTargetEndIconshowEndIcon {
+  color: #90908c;
+}
+.slotTargetEndIconcolor_dark {
+  color: #ffffff;
+}
+.svg__fm9Om {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+  max-width: 80%;
+  flex-shrink: 0;
+  margin: 2px 0px 0px;
+}
