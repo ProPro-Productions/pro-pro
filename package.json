@@ -37,7 +37,6 @@
     "@plasmicpkgs/plasmic-embed-css": "^0.1.173",
     "@plasmicpkgs/plasmic-rich-components": "^1.0.175",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.189",
-    "@shadcn/ui": "^0.0.4",
     "antd": "^5.12.7",
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.3",
