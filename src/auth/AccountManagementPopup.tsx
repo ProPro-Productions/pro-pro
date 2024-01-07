@@ -1,5 +1,5 @@
 import React from "react";
-import { User } from "./interface/User.interface";
+import { User } from "../interface/User.interface";
 
 interface AccountManagementPopupProps {
   user: User;

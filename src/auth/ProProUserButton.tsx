@@ -3,7 +3,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { useAuth } from "./AuthContext";
 import AccountManagementPopup from "./AccountManagementPopup";
-import { User } from "./interface/User.interface";
+import { User } from "../interface/User.interface";
 
 interface ProProUserButtonProps {
   afterSignOutUrl?: string;
