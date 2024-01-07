@@ -1,6 +1,6 @@
 {
   "name": "propro-components",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "repository": "https://github.com/ProPro-Productions/pro-pro.git",
