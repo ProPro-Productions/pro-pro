@@ -7,7 +7,7 @@ import React, {
   useMemo,
   ReactElement,
 } from "react";
-import { User } from "./interface/User.interface";
+import { User } from "../interface/User.interface";
 
 interface AuthContextType {
   user: User | null;

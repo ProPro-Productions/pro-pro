@@ -1,4 +1,4 @@
-import { User } from "./interface/User.interface";
+import { User } from "../interface/User.interface";
 
 class AuthApi {
   baseUrl = "/api/v1/auth";
