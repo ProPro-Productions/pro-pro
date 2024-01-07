@@ -1,8 +1,8 @@
 {
   "name": "propro-components",
   "version": "1.1.6",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "repository": "https://github.com/ProPro-Productions/pro-pro.git",
   "author": "Chidozie C. Okafor <39489124+doziestar@users.noreply.github.com>",
   "license": "MIT",
@@ -17,6 +17,7 @@
     "@babel/preset-react": "^7.23.3",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
+    "@types/react-beautiful-dnd": "^13.1.6",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
@@ -26,7 +27,6 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
-    "@shadcn/ui": "^0.0.4",
     "autoprefixer": "^10.4.16",
     "mongodb": "^6.2.0",
     "postcss": "^8.4.31",
